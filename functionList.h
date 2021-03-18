@@ -1,0 +1,1 @@
+void collide(int, int);
