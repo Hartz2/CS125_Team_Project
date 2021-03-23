@@ -6,7 +6,7 @@ void clearScreen();
 void printTower();
 void printArray(char lines[ROWS][COLS]);
 int loop;
-/*char tower[ROWS][COLS]={
+char tower[ROWS][COLS]={
      "          ____________________________________________ ",
      "                                                     | ",
      "                                                     | ",
@@ -23,4 +23,3 @@ int loop;
      "                                                     | ",
      "          ___________________________________________| "};
 
-*/
