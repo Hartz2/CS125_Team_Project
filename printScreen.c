@@ -38,14 +38,14 @@ void printTower(){
      "                                                     | ",
      "          ___________________________________________| "};
     
-    int player; 
+    int enemyX; 
     clearScreen();
  
-    for(player=1; player<(COLS-2); player+=1){
+    for(enemyX=1; enemyX<(COLS-2); enemyX+=1){
         clearScreen();
-        tower[POS][player]='*';
+        tower[POS][enemyX]='*';
         print_array(tower);
-        tower[POS][player]=' ';
+        tower[POS][enemyX]=' ';
     }
     for(loop=0; loop<15; loop++){
         printf("%s\n", tower[loop]);
