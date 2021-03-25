@@ -1,9 +1,6 @@
 #include <stdio.h>
 #include <unistd.h>
 
-//#define ROWS 16
-//#define COLS 57
-//#define POS 3
 #include "functionList.h"
 
 void print_array(char lines[ROWS][COLS]){
@@ -38,15 +35,20 @@ void printTower(){
      "                                                     | ",
      "          ___________________________________________| "};
     
-    int enemyX; 
-    clearScreen();
- 
+    int enemyX;    
+    clearScreen();    
+    tower[8][COLS-5]='@';
+    print_array(tower);
+
     for(enemyX=1; enemyX<(COLS-2); enemyX+=1){
         clearScreen();
         tower[POS][enemyX]='*';
         print_array(tower);
         tower[POS][enemyX]=' ';
     }
+    
+        
+    
     for(loop=0; loop<15; loop++){
         printf("%s\n", tower[loop]);
     
