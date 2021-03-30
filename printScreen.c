@@ -1,22 +1,25 @@
 #include <stdio.h>
 #include <unistd.h>
-
 #include "functionList.h"
 
-void print_array(char lines[ROWS][COLS]){
+void print_array(char lines[ROWS][COLS])
+{
    
 int x;
- for (x=0; x< ROWS; x++){
+ for (x=0; x< ROWS; x++)
+ {   
     printf("%s\n", lines[x]);
  }
 }
 
-void clearScreen(){
+void clearScreen()
+{
     usleep(1*200000);
     printf("\e[2J\e[H");
 }
 
-void printTower(){
+void printTower()
+{
     int loop;
     char tower[ROWS][COLS]={
      "          ____________________________________________ ",
@@ -40,7 +43,8 @@ void printTower(){
     tower[8][COLS-5]='@';
     print_array(tower);
 
-    for(enemyX=1; enemyX<(COLS-2); enemyX+=1){
+    for(enemyX=1; enemyX<(COLS-2); enemyX+=1)
+    {
         clearScreen();
         tower[position][enemyX]='*';
         print_array(tower);
@@ -49,7 +53,8 @@ void printTower(){
     
         
     
-    for(loop=0; loop<15; loop++){
+    for(loop=0; loop<15; loop++)
+    {
         printf("%s\n", tower[loop]);
     
     }
