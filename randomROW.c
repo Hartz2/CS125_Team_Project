@@ -8,9 +8,9 @@ int main(){
  int position;
     srand(time(NULL));
 
- while(enemy<COLS){
+ while(enemyX<COLS){
     position= rand()%14+2;
-    enemy++;
+    enemyX++;
  }
  return 0;
 }
