@@ -1,6 +1,5 @@
 #define ROWS 16
 #define COLS 57
-#define POS 3
 void collide(int, int);
 void clearScreen();
 void printTower();
