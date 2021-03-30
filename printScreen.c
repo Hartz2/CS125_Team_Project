@@ -42,9 +42,9 @@ void printTower(){
 
     for(enemyX=1; enemyX<(COLS-2); enemyX+=1){
         clearScreen();
-        tower[POS][enemyX]='*';
+        tower[position][enemyX]='*';
         print_array(tower);
-        tower[POS][enemyX]=' ';
+        tower[position][enemyX]=' ';
     }
     
         
