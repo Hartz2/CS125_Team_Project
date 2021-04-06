@@ -3,16 +3,15 @@
 #include <unistd.h>
 #include <time.h>
 
-int main(){
+int main() {
 
- int position;
+int position;
     srand(time(NULL));
 
- while(enemyX<COLS){
+while (enemyX<COLS){
     position= rand()%14+2;
     enemyX++;
- }
- return 0;
 }
 
-
+return 0;
+}
